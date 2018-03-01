@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('test') {
           steps {
-            powershell 'robot -d results Tests/REST.robot'
+            bat 'robot -d results Tests/REST.robot'
           }
         }
         stage('shell') {
