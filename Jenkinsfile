@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        powershell 'robot Tests/REST.robot'
+        powershell 'robot -d results Tests/REST.robot'
       }
     }
   }
