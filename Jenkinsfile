@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('test') {
           steps {
-            bat 'robot -d results Tests/REST.robot'
+            bat 'pybot -d results Tests/REST.robot'
           }
         }
         stage('shell') {
