@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.4 on win32)" generated="20180228 14:28:10.504">
+<suite id="s1" name="Rest" source="C:\Users\phendel\PycharmProjects\untitled\tests\rest.robot">
+<test id="s1-t1" name="Testing if it works">
+<kw name="Set expectations" type="setup">
+<kw name="Expect Response" library="REST">
+<arguments>
+<arg>{ "status": { "enum": [200,404] } }</arg>
+</arguments>
+<status status="PASS" starttime="20180228 14:28:12.134" endtime="20180228 14:28:12.134"></status>
+</kw>
+<status status="PASS" starttime="20180228 14:28:12.133" endtime="20180228 14:28:12.135"></status>
+</kw>
+<kw name="Get" library="REST">
+<arguments>
+<arg>/posts/1</arg>
+</arguments>
+<status status="PASS" starttime="20180228 14:28:12.135" endtime="20180228 14:28:12.750"></status>
+</kw>
+<kw name="Output" library="REST">
+<arguments>
+<arg>response body</arg>
+<arg>${OUTPUTDIR}/a.json</arg>
+</arguments>
+<status status="PASS" starttime="20180228 14:28:12.750" endtime="20180228 14:28:12.765"></status>
+</kw>
+<status status="PASS" starttime="20180228 14:28:12.133" endtime="20180228 14:28:12.765" critical="yes"></status>
+</test>
+<kw name="Rest Instances" library="REST" type="teardown">
+<arguments>
+<arg>${OUTPUTDIR}/spec.json</arg>
+</arguments>
+<status status="PASS" starttime="20180228 14:28:12.767" endtime="20180228 14:28:12.776"></status>
+</kw>
+<status status="PASS" starttime="20180228 14:28:10.509" endtime="20180228 14:28:12.776"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Rest">Rest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

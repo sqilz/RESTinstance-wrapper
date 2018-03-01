@@ -1,0 +1,109 @@
+{
+    "url": "https://jsonplaceholder.typicode.com",
+    "instances": [
+        {
+            "request": {
+                "method": "GET",
+                "endpoint": "/posts/1",
+                "query": {},
+                "body": null,
+                "headers": {
+                    "Accept": "application/json, */*",
+                    "Content-Type": "application/json",
+                    "User-Agent": "RESTinstance/1.0.0b9"
+                },
+                "proxies": {},
+                "timeout": null,
+                "auth": [],
+                "cert": null,
+                "sslVerify": true,
+                "allowRedirects": true,
+                "timestamp": {
+                    "utc": "2018-02-28T13:28:12.749425+00:00",
+                    "local": "2018-02-28T14:28:12.749425+01:00"
+                }
+            },
+            "response": {
+                "status": 200,
+                "seconds": 0.6085130000000001,
+                "body": {
+                    "userId": 1,
+                    "id": 1,
+                    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                },
+                "headers": {
+                    "Date": "Wed, 28 Feb 2018 13:28:12 GMT",
+                    "Content-Type": "application/json; charset=utf-8",
+                    "Transfer-Encoding": "chunked",
+                    "Connection": "keep-alive",
+                    "Set-Cookie": "__cfduid=dcba735fbea724ea92edffb1773611d4c1519824492; expires=Thu, 28-Feb-19 13:28:12 GMT; path=/; domain=.typicode.com; HttpOnly",
+                    "X-Powered-By": "Express",
+                    "Vary": "Origin, Accept-Encoding",
+                    "Access-Control-Allow-Credentials": "true",
+                    "Cache-Control": "public, max-age=14400",
+                    "Pragma": "no-cache",
+                    "Expires": "Wed, 28 Feb 2018 17:28:12 GMT",
+                    "X-Content-Type-Options": "nosniff",
+                    "Etag": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\"",
+                    "Via": "1.1 vegur",
+                    "CF-Cache-Status": "HIT",
+                    "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                    "Server": "cloudflare",
+                    "CF-RAY": "3f43b9c76833412a-HAM",
+                    "Content-Encoding": "gzip"
+                }
+            },
+            "schema": {
+                "exampled": true,
+                "version": "draft04",
+                "request": {
+                    "body": {
+                        "type": "null"
+                    },
+                    "query": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "response": {
+                    "status": {
+                        "enum": [
+                            200,
+                            404
+                        ]
+                    },
+                    "body": {
+                        "type": "object",
+                        "properties": {
+                            "userId": {
+                                "type": "integer",
+                                "example": 1
+                            },
+                            "id": {
+                                "type": "integer",
+                                "example": 1
+                            },
+                            "title": {
+                                "type": "string",
+                                "example": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+                            },
+                            "body": {
+                                "type": "string",
+                                "example": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                            }
+                        },
+                        "required": [
+                            "body",
+                            "id",
+                            "title",
+                            "userId"
+                        ]
+                    }
+                }
+            },
+            "spec": {}
+        }
+    ],
+    "spec": {}
+}
