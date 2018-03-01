@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        bat 'pybot -d results Tests/REST.robot'
+        powershell 'pybot --outputdir results Tests/REST.robot'
       }
     }
   }
