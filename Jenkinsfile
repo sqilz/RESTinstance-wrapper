@@ -2,8 +2,17 @@ pipeline {
   agent any
   stages {
     stage('test') {
-      steps {
-        powershell 'robot -d results Tests/REST.robot'
+      parallel {
+        stage('test') {
+          steps {
+            powershell 'robot -d results Tests/REST.robot'
+          }
+        }
+        stage('shell') {
+          steps {
+            sh 'robot -d results Tests/REST.robot'
+          }
+        }
       }
     }
   }
