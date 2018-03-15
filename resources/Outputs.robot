@@ -2,11 +2,11 @@
 Library  REST  http://localhost:3000
 
 *** Keywords ***
-Output body
+body
     [Arguments]  ${filename}
     [Documentation]  Outputs the body of a request, takes one argument that will be the name of the output file.json
     Output      response body         ${OUTPUTDIR}/json/${filename}.json
-Output header
+header
     [Arguments]  ${filename}
     [Documentation]  Outputs a header, takes one argument that will be the name of the output file.json
     Output      response headers      ${OUTPUTDIR}/json/${filename}.json
