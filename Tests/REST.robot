@@ -17,14 +17,14 @@ Save the first post in a JSON file
 
 Save all available users in a JSON file
     [Tags]  Smoke
-    Requests.Get Resource        user
-    Outputs.body          All_users
+    Requests.Get Resource              user
+    Outputs.body                       All_users
 
 Validate user one and save
     [Tags]  Smoke  test3
-    Requests.Get Resource number  user           1
-    Validate.response status      200
-    Outputs.body           user_one
+    Requests.Get Resource number       user           1
+    Validate.response status           200
+    Outputs.body                       user_one
 
 Get two users from the database
     [Tags]  Smoke  test4

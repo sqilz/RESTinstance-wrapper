@@ -2,3 +2,4 @@
 *.xml
 .idea
 resources/__pycache__
+/results/JSON

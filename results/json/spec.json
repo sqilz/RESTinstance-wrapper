@@ -1,76 +1,13 @@
 [
     {
         "request": {
-            "method": "OPTIONS",
-            "endpoint": "/user",
-            "query": {},
-            "body": null,
-            "headers": {
-                "Accept": "application/json, */*",
-                "Content-Type": "application/json",
-                "User-Agent": "RESTinstance/1.0.0b11"
-            },
-            "proxies": {},
-            "timeout": [
-                null,
-                null
-            ],
-            "cert": null,
-            "sslVerify": true,
-            "allowRedirects": true,
-            "timestamp": {
-                "utc": "2018-03-15T09:28:10.301450+00:00",
-                "local": "2018-03-15T10:28:10.301450+01:00"
-            }
-        },
-        "response": {
-            "status": 204,
-            "seconds": 0.007463,
-            "body": "",
-            "headers": {
-                "X-Powered-By": "Express",
-                "Vary": "Origin, Access-Control-Request-Headers",
-                "Access-Control-Allow-Credentials": "true",
-                "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-                "Content-Length": "0",
-                "Date": "Thu, 15 Mar 2018 09:28:10 GMT",
-                "Connection": "keep-alive"
-            }
-        },
-        "schema": {
-            "exampled": true,
-            "version": "draft04",
-            "request": {
-                "body": {
-                    "type": "null"
-                },
-                "query": {
-                    "type": "object",
-                    "properties": {}
-                }
-            },
-            "response": {
-                "status": {
-                    "enum": [
-                        200,
-                        201,
-                        204,
-                        400,
-                        404
-                    ]
-                },
-                "body": {
-                    "type": "string"
-                }
-            }
-        },
-        "spec": {}
-    },
-    {
-        "request": {
             "method": "GET",
             "endpoint": "/user",
-            "query": {},
+            "query": {
+                "_limit": [
+                    "2"
+                ]
+            },
             "body": null,
             "headers": {
                 "Accept": "application/json, */*",
@@ -86,13 +23,13 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-15T09:28:11.325673+00:00",
-                "local": "2018-03-15T10:28:11.325673+01:00"
+                "utc": "2018-03-15T11:10:26.733760+00:00",
+                "local": "2018-03-15T12:10:26.733760+01:00"
             }
         },
         "response": {
             "status": 200,
-            "seconds": 0.008853999999999999,
+            "seconds": 0.008644,
             "body": [
                 {
                     "id": 1,
@@ -103,12 +40,6 @@
                     "id": 2,
                     "name": "john",
                     "money": 0.99
-                },
-                {
-                    "website": "https://robocon.io",
-                    "id": 3,
-                    "name": "kon",
-                    "money": 1202.2
                 }
             ],
             "headers": {
@@ -118,11 +49,13 @@
                 "Cache-Control": "no-cache",
                 "Pragma": "no-cache",
                 "Expires": "-1",
+                "X-Total-Count": "3",
+                "Access-Control-Expose-Headers": "X-Total-Count",
                 "X-Content-Type-Options": "nosniff",
                 "Content-Type": "application/json; charset=utf-8",
-                "Content-Length": "219",
-                "ETag": "W/\"db-MGEsMqfXDDbDtnN80lwDhzpeSzE\"",
-                "Date": "Thu, 15 Mar 2018 09:28:11 GMT",
+                "Content-Length": "121",
+                "ETag": "W/\"79-tdT0MLFus3fdBdRNdiLOfSBdaO8\"",
+                "Date": "Thu, 15 Mar 2018 11:10:26 GMT",
                 "Connection": "keep-alive"
             }
         },
@@ -135,7 +68,17 @@
                 },
                 "query": {
                     "type": "object",
-                    "properties": {}
+                    "properties": {
+                        "_limit": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "_limit"
+                    ]
                 }
             },
             "response": {
@@ -158,9 +101,6 @@
                             },
                             "money": {
                                 "type": "number"
-                            },
-                            "website": {
-                                "type": "string"
                             }
                         },
                         "required": [
@@ -179,12 +119,6 @@
                             "id": 2,
                             "name": "john",
                             "money": 0.99
-                        },
-                        {
-                            "website": "https://robocon.io",
-                            "id": 3,
-                            "name": "kon",
-                            "money": 1202.2
                         }
                     ]
                 }
