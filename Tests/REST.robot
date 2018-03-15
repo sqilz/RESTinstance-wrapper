@@ -16,7 +16,7 @@ Save the first post in a JSON file
     Outputs.Output body                first_post
 
 Save all available users in a JSON file
-    [Tags]                       Smoke
+    [Tags]  Smoke
     Requests.Get Resource        user
     Outputs.body          All_users
 
@@ -31,7 +31,7 @@ Get two users from the database
     Requests.Query Resource with request parameters  user  ?_limit=2
     Validate.response status                         200
     Outputs.body                                     two_users
-    Log  ${OUTPUTDIR}/JSON/two_users.json
+
 
 Test POST localhost:3000
     POST                    http://localhost:3000/posts     {"id": "","title": "A Title", "author": "Someone"}
