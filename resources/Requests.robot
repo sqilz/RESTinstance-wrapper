@@ -18,3 +18,7 @@ Get Resource number
     [Arguments]  ${resource}  ${number}
     GET                         /${resource}/${number}
 
+Post To Resource
+    [Documentation]  Posts JSON to resource
+    [Arguments]  ${resource}  ${JSON}
+    POST                        /${resource}  ${JSON}

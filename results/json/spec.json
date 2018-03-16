@@ -19,13 +19,13 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-16T09:29:26.769691+00:00",
-                "local": "2018-03-16T10:29:26.769691+01:00"
+                "utc": "2018-03-16T13:53:05.952976+00:00",
+                "local": "2018-03-16T14:53:05.952976+01:00"
             }
         },
         "response": {
             "status": 200,
-            "seconds": 0.320094,
+            "seconds": 0.379732,
             "body": {
                 "userId": 1,
                 "id": 1,
@@ -33,24 +33,24 @@
                 "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
             },
             "headers": {
-                "Date": "Fri, 16 Mar 2018 09:29:26 GMT",
+                "Date": "Fri, 16 Mar 2018 13:53:05 GMT",
                 "Content-Type": "application/json; charset=utf-8",
                 "Transfer-Encoding": "chunked",
                 "Connection": "keep-alive",
-                "Set-Cookie": "__cfduid=d59cb3c93d2e9d6538589e34052c51dd91521192566; expires=Sat, 16-Mar-19 09:29:26 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "Set-Cookie": "__cfduid=d06abd0c039283781a641f77c30b1a9591521208385; expires=Sat, 16-Mar-19 13:53:05 GMT; path=/; domain=.typicode.com; HttpOnly",
                 "X-Powered-By": "Express",
                 "Vary": "Origin, Accept-Encoding",
                 "Access-Control-Allow-Credentials": "true",
                 "Cache-Control": "public, max-age=14400",
                 "Pragma": "no-cache",
-                "Expires": "Fri, 16 Mar 2018 13:29:26 GMT",
+                "Expires": "Fri, 16 Mar 2018 17:53:05 GMT",
                 "X-Content-Type-Options": "nosniff",
                 "Etag": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\"",
                 "Via": "1.1 vegur",
                 "CF-Cache-Status": "HIT",
                 "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
                 "Server": "cloudflare",
-                "CF-RAY": "3fc632064c53412a-HAM",
+                "CF-RAY": "3fc7b43c2e0f408e-HAM",
                 "Content-Encoding": "gzip"
             }
         },
@@ -124,13 +124,13 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-16T09:29:26.905954+00:00",
-                "local": "2018-03-16T10:29:26.905954+01:00"
+                "utc": "2018-03-16T13:53:06.110738+00:00",
+                "local": "2018-03-16T14:53:06.110738+01:00"
             }
         },
         "response": {
             "status": 200,
-            "seconds": 0.118934,
+            "seconds": 0.12645699999999999,
             "body": [
                 {
                     "id": 1,
@@ -364,17 +364,17 @@
                 }
             ],
             "headers": {
-                "Date": "Fri, 16 Mar 2018 09:29:26 GMT",
+                "Date": "Fri, 16 Mar 2018 13:53:06 GMT",
                 "Content-Type": "application/json; charset=utf-8",
                 "Transfer-Encoding": "chunked",
                 "Connection": "keep-alive",
-                "Set-Cookie": "__cfduid=d084a3a6599f9bdc10bd72282a5c02f121521192566; expires=Sat, 16-Mar-19 09:29:26 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "Set-Cookie": "__cfduid=dbc72cc807c97a289355652b15572a2cc1521208386; expires=Sat, 16-Mar-19 13:53:06 GMT; path=/; domain=.typicode.com; HttpOnly",
                 "X-Powered-By": "Express",
                 "Vary": "Origin, Accept-Encoding",
                 "Access-Control-Allow-Credentials": "true",
                 "Cache-Control": "public, max-age=14400",
                 "Pragma": "no-cache",
-                "Expires": "Fri, 16 Mar 2018 13:29:26 GMT",
+                "Expires": "Fri, 16 Mar 2018 17:53:06 GMT",
                 "X-Content-Type-Options": "nosniff",
                 "Etag": "W/\"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ\"",
                 "Content-Encoding": "gzip",
@@ -382,7 +382,7 @@
                 "CF-Cache-Status": "HIT",
                 "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
                 "Server": "cloudflare",
-                "CF-RAY": "3fc632072ad040ca-HAM"
+                "CF-RAY": "3fc7b43d282040f4-HAM"
             }
         },
         "schema": {
@@ -757,13 +757,13 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-16T09:29:27.033487+00:00",
-                "local": "2018-03-16T10:29:27.033487+01:00"
+                "utc": "2018-03-16T13:53:06.698758+00:00",
+                "local": "2018-03-16T14:53:06.698758+01:00"
             }
         },
         "response": {
             "status": 200,
-            "seconds": 0.11349200000000001,
+            "seconds": 0.570096,
             "body": {
                 "id": 1,
                 "name": "Leanne Graham",
@@ -788,24 +788,24 @@
                 }
             },
             "headers": {
-                "Date": "Fri, 16 Mar 2018 09:29:27 GMT",
+                "Date": "Fri, 16 Mar 2018 13:53:06 GMT",
                 "Content-Type": "application/json; charset=utf-8",
                 "Transfer-Encoding": "chunked",
                 "Connection": "keep-alive",
-                "Set-Cookie": "__cfduid=d394455313037c7e0a01e882d6275982f1521192567; expires=Sat, 16-Mar-19 09:29:27 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "Set-Cookie": "__cfduid=deeeffdeb763df0b21dd9af8700fca9201521208386; expires=Sat, 16-Mar-19 13:53:06 GMT; path=/; domain=.typicode.com; HttpOnly",
                 "X-Powered-By": "Express",
                 "Vary": "Origin, Accept-Encoding",
                 "Access-Control-Allow-Credentials": "true",
                 "Cache-Control": "public, max-age=14400",
                 "Pragma": "no-cache",
-                "Expires": "Fri, 16 Mar 2018 13:29:27 GMT",
+                "Expires": "Fri, 16 Mar 2018 17:53:06 GMT",
                 "X-Content-Type-Options": "nosniff",
                 "Etag": "W/\"1fd-+2Y3G3w049iSZtw5t1mzSnunngE\"",
                 "Via": "1.1 vegur",
-                "CF-Cache-Status": "HIT",
+                "CF-Cache-Status": "REVALIDATED",
                 "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
                 "Server": "cloudflare",
-                "CF-RAY": "3fc63207fa8440e2-HAM",
+                "CF-RAY": "3fc7b43dfbf040ee-HAM",
                 "Content-Encoding": "gzip"
             }
         },
@@ -968,13 +968,13 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-16T09:29:27.167179+00:00",
-                "local": "2018-03-16T10:29:27.167179+01:00"
+                "utc": "2018-03-16T13:53:07.136540+00:00",
+                "local": "2018-03-16T14:53:07.136540+01:00"
             }
         },
         "response": {
             "status": 200,
-            "seconds": 0.118798,
+            "seconds": 0.41985500000000003,
             "body": [
                 {
                     "id": 1,
@@ -1024,27 +1024,27 @@
                 }
             ],
             "headers": {
-                "Date": "Fri, 16 Mar 2018 09:29:27 GMT",
+                "Date": "Fri, 16 Mar 2018 13:53:07 GMT",
                 "Content-Type": "application/json; charset=utf-8",
                 "Transfer-Encoding": "chunked",
                 "Connection": "keep-alive",
-                "Set-Cookie": "__cfduid=d82c068e08f94f16c3d3a84276c564fc41521192567; expires=Sat, 16-Mar-19 09:29:27 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "Set-Cookie": "__cfduid=d99a9c4a9d96e48c9268d855e8afee93f1521208386; expires=Sat, 16-Mar-19 13:53:06 GMT; path=/; domain=.typicode.com; HttpOnly",
                 "X-Powered-By": "Express",
                 "Vary": "Origin, Accept-Encoding",
                 "Access-Control-Allow-Credentials": "true",
                 "Cache-Control": "public, max-age=14400",
                 "Pragma": "no-cache",
-                "Expires": "Fri, 16 Mar 2018 13:29:27 GMT",
+                "Expires": "Fri, 16 Mar 2018 17:53:07 GMT",
                 "X-Total-Count": "10",
                 "Access-Control-Expose-Headers": "X-Total-Count",
                 "X-Content-Type-Options": "nosniff",
                 "Etag": "W/\"45c-uonB+X+ufKydp7NkoDHZYVCTYEk\"",
                 "Content-Encoding": "gzip",
                 "Via": "1.1 vegur",
-                "CF-Cache-Status": "HIT",
+                "CF-Cache-Status": "REVALIDATED",
                 "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
                 "Server": "cloudflare",
-                "CF-RAY": "3fc63208ce6340a6-HAM"
+                "CF-RAY": "3fc7b441aeb64118-HAM"
             }
         },
         "schema": {
@@ -1225,7 +1225,7 @@
     {
         "request": {
             "method": "POST",
-            "endpoint": "https://jsonplaceholder.typicode.com/posts",
+            "endpoint": "/posts",
             "query": {},
             "body": {
                 "id": "",
@@ -1246,24 +1246,24 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-16T09:29:27.566241+00:00",
-                "local": "2018-03-16T10:29:27.566241+01:00"
+                "utc": "2018-03-16T13:53:07.766486+00:00",
+                "local": "2018-03-16T14:53:07.766486+01:00"
             }
         },
         "response": {
             "status": 201,
-            "seconds": 0.38473,
+            "seconds": 0.610183,
             "body": {
                 "id": 101,
                 "title": "A Title",
                 "author": "Someone"
             },
             "headers": {
-                "Date": "Fri, 16 Mar 2018 09:29:27 GMT",
+                "Date": "Fri, 16 Mar 2018 13:53:07 GMT",
                 "Content-Type": "application/json; charset=utf-8",
                 "Content-Length": "60",
                 "Connection": "keep-alive",
-                "Set-Cookie": "__cfduid=df25a183aebda7d3d54759d4cbaf3cdb61521192567; expires=Sat, 16-Mar-19 09:29:27 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "Set-Cookie": "__cfduid=d36eab1c7ab7e8890cc34e336578d9e8c1521208387; expires=Sat, 16-Mar-19 13:53:07 GMT; path=/; domain=.typicode.com; HttpOnly",
                 "X-Powered-By": "Express",
                 "Vary": "Origin, X-HTTP-Method-Override, Accept-Encoding",
                 "Access-Control-Allow-Credentials": "true",
@@ -1277,7 +1277,7 @@
                 "Via": "1.1 vegur",
                 "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
                 "Server": "cloudflare",
-                "CF-RAY": "3fc632099bf340ca-HAM"
+                "CF-RAY": "3fc7b4447d9a4112-HAM"
             }
         },
         "schema": {

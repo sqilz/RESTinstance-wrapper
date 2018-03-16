@@ -6,7 +6,7 @@ Resource        ../resources/Outputs.robot
 Resource        ../resources/Validate.robot
 Resource        ../resources/Requests.robot
 Suite Teardown  Rest instances        ${OUTPUTDIR}/json/spec.json
-Test Setup      Set expectations
+Test Setup      Validate.Set expectations
 
 *** Test Cases ***
 Save the first post in a JSON file
@@ -32,10 +32,5 @@ Get two users from the database
     Validate.response status                         200
     Outputs.body                                     two_users
 
-
-Test POST localhost:3000
-    POST                    ${URL}/posts     {"id": "","title": "A Title", "author": "Someone"}
-
-*** Keywords ***
-Set expectations
-    Expect response         {"status": { "enum": [200, 201, 204, 400, 404] } }
+Add a new post
+    Requests.Post to Resource  posts                {"id": "","title": "A Title", "author": "Someone"}
