@@ -2,7 +2,952 @@
     {
         "request": {
             "method": "GET",
-            "endpoint": "/user",
+            "endpoint": "/posts/1",
+            "query": {},
+            "body": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.0.0b11"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2018-03-16T09:29:26.769691+00:00",
+                "local": "2018-03-16T10:29:26.769691+01:00"
+            }
+        },
+        "response": {
+            "status": 200,
+            "seconds": 0.320094,
+            "body": {
+                "userId": 1,
+                "id": 1,
+                "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+            },
+            "headers": {
+                "Date": "Fri, 16 Mar 2018 09:29:26 GMT",
+                "Content-Type": "application/json; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Set-Cookie": "__cfduid=d59cb3c93d2e9d6538589e34052c51dd91521192566; expires=Sat, 16-Mar-19 09:29:26 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "X-Powered-By": "Express",
+                "Vary": "Origin, Accept-Encoding",
+                "Access-Control-Allow-Credentials": "true",
+                "Cache-Control": "public, max-age=14400",
+                "Pragma": "no-cache",
+                "Expires": "Fri, 16 Mar 2018 13:29:26 GMT",
+                "X-Content-Type-Options": "nosniff",
+                "Etag": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\"",
+                "Via": "1.1 vegur",
+                "CF-Cache-Status": "HIT",
+                "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "Server": "cloudflare",
+                "CF-RAY": "3fc632064c53412a-HAM",
+                "Content-Encoding": "gzip"
+            }
+        },
+        "schema": {
+            "exampled": true,
+            "version": "draft04",
+            "request": {
+                "body": {
+                    "type": "null"
+                },
+                "query": {
+                    "type": "object",
+                    "properties": {}
+                }
+            },
+            "response": {
+                "status": {
+                    "enum": [
+                        200
+                    ],
+                    "type": "integer"
+                },
+                "body": {
+                    "type": "object",
+                    "properties": {
+                        "userId": {
+                            "type": "integer",
+                            "example": 1
+                        },
+                        "id": {
+                            "type": "integer",
+                            "example": 1
+                        },
+                        "title": {
+                            "type": "string",
+                            "example": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+                        },
+                        "body": {
+                            "type": "string",
+                            "example": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                        }
+                    },
+                    "required": [
+                        "body",
+                        "id",
+                        "title",
+                        "userId"
+                    ]
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "GET",
+            "endpoint": "/users",
+            "query": {},
+            "body": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.0.0b11"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2018-03-16T09:29:26.905954+00:00",
+                "local": "2018-03-16T10:29:26.905954+01:00"
+            }
+        },
+        "response": {
+            "status": 200,
+            "seconds": 0.118934,
+            "body": [
+                {
+                    "id": 1,
+                    "name": "Leanne Graham",
+                    "username": "Bret",
+                    "email": "Sincere@april.biz",
+                    "address": {
+                        "street": "Kulas Light",
+                        "suite": "Apt. 556",
+                        "city": "Gwenborough",
+                        "zipcode": "92998-3874",
+                        "geo": {
+                            "lat": "-37.3159",
+                            "lng": "81.1496"
+                        }
+                    },
+                    "phone": "1-770-736-8031 x56442",
+                    "website": "hildegard.org",
+                    "company": {
+                        "name": "Romaguera-Crona",
+                        "catchPhrase": "Multi-layered client-server neural-net",
+                        "bs": "harness real-time e-markets"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Ervin Howell",
+                    "username": "Antonette",
+                    "email": "Shanna@melissa.tv",
+                    "address": {
+                        "street": "Victor Plains",
+                        "suite": "Suite 879",
+                        "city": "Wisokyburgh",
+                        "zipcode": "90566-7771",
+                        "geo": {
+                            "lat": "-43.9509",
+                            "lng": "-34.4618"
+                        }
+                    },
+                    "phone": "010-692-6593 x09125",
+                    "website": "anastasia.net",
+                    "company": {
+                        "name": "Deckow-Crist",
+                        "catchPhrase": "Proactive didactic contingency",
+                        "bs": "synergize scalable supply-chains"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "Clementine Bauch",
+                    "username": "Samantha",
+                    "email": "Nathan@yesenia.net",
+                    "address": {
+                        "street": "Douglas Extension",
+                        "suite": "Suite 847",
+                        "city": "McKenziehaven",
+                        "zipcode": "59590-4157",
+                        "geo": {
+                            "lat": "-68.6102",
+                            "lng": "-47.0653"
+                        }
+                    },
+                    "phone": "1-463-123-4447",
+                    "website": "ramiro.info",
+                    "company": {
+                        "name": "Romaguera-Jacobson",
+                        "catchPhrase": "Face to face bifurcated interface",
+                        "bs": "e-enable strategic applications"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "Patricia Lebsack",
+                    "username": "Karianne",
+                    "email": "Julianne.OConner@kory.org",
+                    "address": {
+                        "street": "Hoeger Mall",
+                        "suite": "Apt. 692",
+                        "city": "South Elvis",
+                        "zipcode": "53919-4257",
+                        "geo": {
+                            "lat": "29.4572",
+                            "lng": "-164.2990"
+                        }
+                    },
+                    "phone": "493-170-9623 x156",
+                    "website": "kale.biz",
+                    "company": {
+                        "name": "Robel-Corkery",
+                        "catchPhrase": "Multi-tiered zero tolerance productivity",
+                        "bs": "transition cutting-edge web services"
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "Chelsey Dietrich",
+                    "username": "Kamren",
+                    "email": "Lucio_Hettinger@annie.ca",
+                    "address": {
+                        "street": "Skiles Walks",
+                        "suite": "Suite 351",
+                        "city": "Roscoeview",
+                        "zipcode": "33263",
+                        "geo": {
+                            "lat": "-31.8129",
+                            "lng": "62.5342"
+                        }
+                    },
+                    "phone": "(254)954-1289",
+                    "website": "demarco.info",
+                    "company": {
+                        "name": "Keebler LLC",
+                        "catchPhrase": "User-centric fault-tolerant solution",
+                        "bs": "revolutionize end-to-end systems"
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "Mrs. Dennis Schulist",
+                    "username": "Leopoldo_Corkery",
+                    "email": "Karley_Dach@jasper.info",
+                    "address": {
+                        "street": "Norberto Crossing",
+                        "suite": "Apt. 950",
+                        "city": "South Christy",
+                        "zipcode": "23505-1337",
+                        "geo": {
+                            "lat": "-71.4197",
+                            "lng": "71.7478"
+                        }
+                    },
+                    "phone": "1-477-935-8478 x6430",
+                    "website": "ola.org",
+                    "company": {
+                        "name": "Considine-Lockman",
+                        "catchPhrase": "Synchronised bottom-line interface",
+                        "bs": "e-enable innovative applications"
+                    }
+                },
+                {
+                    "id": 7,
+                    "name": "Kurtis Weissnat",
+                    "username": "Elwyn.Skiles",
+                    "email": "Telly.Hoeger@billy.biz",
+                    "address": {
+                        "street": "Rex Trail",
+                        "suite": "Suite 280",
+                        "city": "Howemouth",
+                        "zipcode": "58804-1099",
+                        "geo": {
+                            "lat": "24.8918",
+                            "lng": "21.8984"
+                        }
+                    },
+                    "phone": "210.067.6132",
+                    "website": "elvis.io",
+                    "company": {
+                        "name": "Johns Group",
+                        "catchPhrase": "Configurable multimedia task-force",
+                        "bs": "generate enterprise e-tailers"
+                    }
+                },
+                {
+                    "id": 8,
+                    "name": "Nicholas Runolfsdottir V",
+                    "username": "Maxime_Nienow",
+                    "email": "Sherwood@rosamond.me",
+                    "address": {
+                        "street": "Ellsworth Summit",
+                        "suite": "Suite 729",
+                        "city": "Aliyaview",
+                        "zipcode": "45169",
+                        "geo": {
+                            "lat": "-14.3990",
+                            "lng": "-120.7677"
+                        }
+                    },
+                    "phone": "586.493.6943 x140",
+                    "website": "jacynthe.com",
+                    "company": {
+                        "name": "Abernathy Group",
+                        "catchPhrase": "Implemented secondary concept",
+                        "bs": "e-enable extensible e-tailers"
+                    }
+                },
+                {
+                    "id": 9,
+                    "name": "Glenna Reichert",
+                    "username": "Delphine",
+                    "email": "Chaim_McDermott@dana.io",
+                    "address": {
+                        "street": "Dayna Park",
+                        "suite": "Suite 449",
+                        "city": "Bartholomebury",
+                        "zipcode": "76495-3109",
+                        "geo": {
+                            "lat": "24.6463",
+                            "lng": "-168.8889"
+                        }
+                    },
+                    "phone": "(775)976-6794 x41206",
+                    "website": "conrad.com",
+                    "company": {
+                        "name": "Yost and Sons",
+                        "catchPhrase": "Switchable contextually-based project",
+                        "bs": "aggregate real-time technologies"
+                    }
+                },
+                {
+                    "id": 10,
+                    "name": "Clementina DuBuque",
+                    "username": "Moriah.Stanton",
+                    "email": "Rey.Padberg@karina.biz",
+                    "address": {
+                        "street": "Kattie Turnpike",
+                        "suite": "Suite 198",
+                        "city": "Lebsackbury",
+                        "zipcode": "31428-2261",
+                        "geo": {
+                            "lat": "-38.2386",
+                            "lng": "57.2232"
+                        }
+                    },
+                    "phone": "024-648-3804",
+                    "website": "ambrose.net",
+                    "company": {
+                        "name": "Hoeger LLC",
+                        "catchPhrase": "Centralized empowering task-force",
+                        "bs": "target end-to-end models"
+                    }
+                }
+            ],
+            "headers": {
+                "Date": "Fri, 16 Mar 2018 09:29:26 GMT",
+                "Content-Type": "application/json; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Set-Cookie": "__cfduid=d084a3a6599f9bdc10bd72282a5c02f121521192566; expires=Sat, 16-Mar-19 09:29:26 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "X-Powered-By": "Express",
+                "Vary": "Origin, Accept-Encoding",
+                "Access-Control-Allow-Credentials": "true",
+                "Cache-Control": "public, max-age=14400",
+                "Pragma": "no-cache",
+                "Expires": "Fri, 16 Mar 2018 13:29:26 GMT",
+                "X-Content-Type-Options": "nosniff",
+                "Etag": "W/\"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ\"",
+                "Content-Encoding": "gzip",
+                "Via": "1.1 vegur",
+                "CF-Cache-Status": "HIT",
+                "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "Server": "cloudflare",
+                "CF-RAY": "3fc632072ad040ca-HAM"
+            }
+        },
+        "schema": {
+            "exampled": true,
+            "version": "draft04",
+            "request": {
+                "body": {
+                    "type": "null"
+                },
+                "query": {
+                    "type": "object",
+                    "properties": {}
+                }
+            },
+            "response": {
+                "status": {
+                    "enum": [
+                        200,
+                        201,
+                        204,
+                        400,
+                        404
+                    ]
+                },
+                "body": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "username": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "address": {
+                                "type": "object",
+                                "properties": {
+                                    "street": {
+                                        "type": "string"
+                                    },
+                                    "suite": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "zipcode": {
+                                        "type": "string"
+                                    },
+                                    "geo": {
+                                        "type": "object",
+                                        "properties": {
+                                            "lat": {
+                                                "type": "string"
+                                            },
+                                            "lng": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "lat",
+                                            "lng"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "city",
+                                    "geo",
+                                    "street",
+                                    "suite",
+                                    "zipcode"
+                                ]
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "website": {
+                                "type": "string"
+                            },
+                            "company": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "catchPhrase": {
+                                        "type": "string"
+                                    },
+                                    "bs": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "bs",
+                                    "catchPhrase",
+                                    "name"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "address",
+                            "company",
+                            "email",
+                            "id",
+                            "name",
+                            "phone",
+                            "username",
+                            "website"
+                        ]
+                    },
+                    "example": [
+                        {
+                            "id": 1,
+                            "name": "Leanne Graham",
+                            "username": "Bret",
+                            "email": "Sincere@april.biz",
+                            "address": {
+                                "street": "Kulas Light",
+                                "suite": "Apt. 556",
+                                "city": "Gwenborough",
+                                "zipcode": "92998-3874",
+                                "geo": {
+                                    "lat": "-37.3159",
+                                    "lng": "81.1496"
+                                }
+                            },
+                            "phone": "1-770-736-8031 x56442",
+                            "website": "hildegard.org",
+                            "company": {
+                                "name": "Romaguera-Crona",
+                                "catchPhrase": "Multi-layered client-server neural-net",
+                                "bs": "harness real-time e-markets"
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ervin Howell",
+                            "username": "Antonette",
+                            "email": "Shanna@melissa.tv",
+                            "address": {
+                                "street": "Victor Plains",
+                                "suite": "Suite 879",
+                                "city": "Wisokyburgh",
+                                "zipcode": "90566-7771",
+                                "geo": {
+                                    "lat": "-43.9509",
+                                    "lng": "-34.4618"
+                                }
+                            },
+                            "phone": "010-692-6593 x09125",
+                            "website": "anastasia.net",
+                            "company": {
+                                "name": "Deckow-Crist",
+                                "catchPhrase": "Proactive didactic contingency",
+                                "bs": "synergize scalable supply-chains"
+                            }
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clementine Bauch",
+                            "username": "Samantha",
+                            "email": "Nathan@yesenia.net",
+                            "address": {
+                                "street": "Douglas Extension",
+                                "suite": "Suite 847",
+                                "city": "McKenziehaven",
+                                "zipcode": "59590-4157",
+                                "geo": {
+                                    "lat": "-68.6102",
+                                    "lng": "-47.0653"
+                                }
+                            },
+                            "phone": "1-463-123-4447",
+                            "website": "ramiro.info",
+                            "company": {
+                                "name": "Romaguera-Jacobson",
+                                "catchPhrase": "Face to face bifurcated interface",
+                                "bs": "e-enable strategic applications"
+                            }
+                        },
+                        {
+                            "id": 4,
+                            "name": "Patricia Lebsack",
+                            "username": "Karianne",
+                            "email": "Julianne.OConner@kory.org",
+                            "address": {
+                                "street": "Hoeger Mall",
+                                "suite": "Apt. 692",
+                                "city": "South Elvis",
+                                "zipcode": "53919-4257",
+                                "geo": {
+                                    "lat": "29.4572",
+                                    "lng": "-164.2990"
+                                }
+                            },
+                            "phone": "493-170-9623 x156",
+                            "website": "kale.biz",
+                            "company": {
+                                "name": "Robel-Corkery",
+                                "catchPhrase": "Multi-tiered zero tolerance productivity",
+                                "bs": "transition cutting-edge web services"
+                            }
+                        },
+                        {
+                            "id": 5,
+                            "name": "Chelsey Dietrich",
+                            "username": "Kamren",
+                            "email": "Lucio_Hettinger@annie.ca",
+                            "address": {
+                                "street": "Skiles Walks",
+                                "suite": "Suite 351",
+                                "city": "Roscoeview",
+                                "zipcode": "33263",
+                                "geo": {
+                                    "lat": "-31.8129",
+                                    "lng": "62.5342"
+                                }
+                            },
+                            "phone": "(254)954-1289",
+                            "website": "demarco.info",
+                            "company": {
+                                "name": "Keebler LLC",
+                                "catchPhrase": "User-centric fault-tolerant solution",
+                                "bs": "revolutionize end-to-end systems"
+                            }
+                        },
+                        {
+                            "id": 6,
+                            "name": "Mrs. Dennis Schulist",
+                            "username": "Leopoldo_Corkery",
+                            "email": "Karley_Dach@jasper.info",
+                            "address": {
+                                "street": "Norberto Crossing",
+                                "suite": "Apt. 950",
+                                "city": "South Christy",
+                                "zipcode": "23505-1337",
+                                "geo": {
+                                    "lat": "-71.4197",
+                                    "lng": "71.7478"
+                                }
+                            },
+                            "phone": "1-477-935-8478 x6430",
+                            "website": "ola.org",
+                            "company": {
+                                "name": "Considine-Lockman",
+                                "catchPhrase": "Synchronised bottom-line interface",
+                                "bs": "e-enable innovative applications"
+                            }
+                        },
+                        {
+                            "id": 7,
+                            "name": "Kurtis Weissnat",
+                            "username": "Elwyn.Skiles",
+                            "email": "Telly.Hoeger@billy.biz",
+                            "address": {
+                                "street": "Rex Trail",
+                                "suite": "Suite 280",
+                                "city": "Howemouth",
+                                "zipcode": "58804-1099",
+                                "geo": {
+                                    "lat": "24.8918",
+                                    "lng": "21.8984"
+                                }
+                            },
+                            "phone": "210.067.6132",
+                            "website": "elvis.io",
+                            "company": {
+                                "name": "Johns Group",
+                                "catchPhrase": "Configurable multimedia task-force",
+                                "bs": "generate enterprise e-tailers"
+                            }
+                        },
+                        {
+                            "id": 8,
+                            "name": "Nicholas Runolfsdottir V",
+                            "username": "Maxime_Nienow",
+                            "email": "Sherwood@rosamond.me",
+                            "address": {
+                                "street": "Ellsworth Summit",
+                                "suite": "Suite 729",
+                                "city": "Aliyaview",
+                                "zipcode": "45169",
+                                "geo": {
+                                    "lat": "-14.3990",
+                                    "lng": "-120.7677"
+                                }
+                            },
+                            "phone": "586.493.6943 x140",
+                            "website": "jacynthe.com",
+                            "company": {
+                                "name": "Abernathy Group",
+                                "catchPhrase": "Implemented secondary concept",
+                                "bs": "e-enable extensible e-tailers"
+                            }
+                        },
+                        {
+                            "id": 9,
+                            "name": "Glenna Reichert",
+                            "username": "Delphine",
+                            "email": "Chaim_McDermott@dana.io",
+                            "address": {
+                                "street": "Dayna Park",
+                                "suite": "Suite 449",
+                                "city": "Bartholomebury",
+                                "zipcode": "76495-3109",
+                                "geo": {
+                                    "lat": "24.6463",
+                                    "lng": "-168.8889"
+                                }
+                            },
+                            "phone": "(775)976-6794 x41206",
+                            "website": "conrad.com",
+                            "company": {
+                                "name": "Yost and Sons",
+                                "catchPhrase": "Switchable contextually-based project",
+                                "bs": "aggregate real-time technologies"
+                            }
+                        },
+                        {
+                            "id": 10,
+                            "name": "Clementina DuBuque",
+                            "username": "Moriah.Stanton",
+                            "email": "Rey.Padberg@karina.biz",
+                            "address": {
+                                "street": "Kattie Turnpike",
+                                "suite": "Suite 198",
+                                "city": "Lebsackbury",
+                                "zipcode": "31428-2261",
+                                "geo": {
+                                    "lat": "-38.2386",
+                                    "lng": "57.2232"
+                                }
+                            },
+                            "phone": "024-648-3804",
+                            "website": "ambrose.net",
+                            "company": {
+                                "name": "Hoeger LLC",
+                                "catchPhrase": "Centralized empowering task-force",
+                                "bs": "target end-to-end models"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "GET",
+            "endpoint": "/users/1",
+            "query": {},
+            "body": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.0.0b11"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2018-03-16T09:29:27.033487+00:00",
+                "local": "2018-03-16T10:29:27.033487+01:00"
+            }
+        },
+        "response": {
+            "status": 200,
+            "seconds": 0.11349200000000001,
+            "body": {
+                "id": 1,
+                "name": "Leanne Graham",
+                "username": "Bret",
+                "email": "Sincere@april.biz",
+                "address": {
+                    "street": "Kulas Light",
+                    "suite": "Apt. 556",
+                    "city": "Gwenborough",
+                    "zipcode": "92998-3874",
+                    "geo": {
+                        "lat": "-37.3159",
+                        "lng": "81.1496"
+                    }
+                },
+                "phone": "1-770-736-8031 x56442",
+                "website": "hildegard.org",
+                "company": {
+                    "name": "Romaguera-Crona",
+                    "catchPhrase": "Multi-layered client-server neural-net",
+                    "bs": "harness real-time e-markets"
+                }
+            },
+            "headers": {
+                "Date": "Fri, 16 Mar 2018 09:29:27 GMT",
+                "Content-Type": "application/json; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Set-Cookie": "__cfduid=d394455313037c7e0a01e882d6275982f1521192567; expires=Sat, 16-Mar-19 09:29:27 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "X-Powered-By": "Express",
+                "Vary": "Origin, Accept-Encoding",
+                "Access-Control-Allow-Credentials": "true",
+                "Cache-Control": "public, max-age=14400",
+                "Pragma": "no-cache",
+                "Expires": "Fri, 16 Mar 2018 13:29:27 GMT",
+                "X-Content-Type-Options": "nosniff",
+                "Etag": "W/\"1fd-+2Y3G3w049iSZtw5t1mzSnunngE\"",
+                "Via": "1.1 vegur",
+                "CF-Cache-Status": "HIT",
+                "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "Server": "cloudflare",
+                "CF-RAY": "3fc63207fa8440e2-HAM",
+                "Content-Encoding": "gzip"
+            }
+        },
+        "schema": {
+            "exampled": true,
+            "version": "draft04",
+            "request": {
+                "body": {
+                    "type": "null"
+                },
+                "query": {
+                    "type": "object",
+                    "properties": {}
+                }
+            },
+            "response": {
+                "status": {
+                    "enum": [
+                        200
+                    ],
+                    "type": "integer"
+                },
+                "body": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "example": 1
+                        },
+                        "name": {
+                            "type": "string",
+                            "example": "Leanne Graham"
+                        },
+                        "username": {
+                            "type": "string",
+                            "example": "Bret"
+                        },
+                        "email": {
+                            "type": "string",
+                            "example": "Sincere@april.biz"
+                        },
+                        "address": {
+                            "type": "object",
+                            "properties": {
+                                "street": {
+                                    "type": "string"
+                                },
+                                "suite": {
+                                    "type": "string"
+                                },
+                                "city": {
+                                    "type": "string"
+                                },
+                                "zipcode": {
+                                    "type": "string"
+                                },
+                                "geo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "lat": {
+                                            "type": "string"
+                                        },
+                                        "lng": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "lat",
+                                        "lng"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "city",
+                                "geo",
+                                "street",
+                                "suite",
+                                "zipcode"
+                            ],
+                            "example": {
+                                "street": "Kulas Light",
+                                "suite": "Apt. 556",
+                                "city": "Gwenborough",
+                                "zipcode": "92998-3874",
+                                "geo": {
+                                    "lat": "-37.3159",
+                                    "lng": "81.1496"
+                                }
+                            }
+                        },
+                        "phone": {
+                            "type": "string",
+                            "example": "1-770-736-8031 x56442"
+                        },
+                        "website": {
+                            "type": "string",
+                            "example": "hildegard.org"
+                        },
+                        "company": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "catchPhrase": {
+                                    "type": "string"
+                                },
+                                "bs": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "bs",
+                                "catchPhrase",
+                                "name"
+                            ],
+                            "example": {
+                                "name": "Romaguera-Crona",
+                                "catchPhrase": "Multi-layered client-server neural-net",
+                                "bs": "harness real-time e-markets"
+                            }
+                        }
+                    },
+                    "required": [
+                        "address",
+                        "company",
+                        "email",
+                        "id",
+                        "name",
+                        "phone",
+                        "username",
+                        "website"
+                    ]
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "GET",
+            "endpoint": "/users",
             "query": {
                 "_limit": [
                     "2"
@@ -23,40 +968,83 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2018-03-15T11:10:26.733760+00:00",
-                "local": "2018-03-15T12:10:26.733760+01:00"
+                "utc": "2018-03-16T09:29:27.167179+00:00",
+                "local": "2018-03-16T10:29:27.167179+01:00"
             }
         },
         "response": {
             "status": 200,
-            "seconds": 0.008644,
+            "seconds": 0.118798,
             "body": [
                 {
                     "id": 1,
-                    "name": "jan",
-                    "money": 0.23
+                    "name": "Leanne Graham",
+                    "username": "Bret",
+                    "email": "Sincere@april.biz",
+                    "address": {
+                        "street": "Kulas Light",
+                        "suite": "Apt. 556",
+                        "city": "Gwenborough",
+                        "zipcode": "92998-3874",
+                        "geo": {
+                            "lat": "-37.3159",
+                            "lng": "81.1496"
+                        }
+                    },
+                    "phone": "1-770-736-8031 x56442",
+                    "website": "hildegard.org",
+                    "company": {
+                        "name": "Romaguera-Crona",
+                        "catchPhrase": "Multi-layered client-server neural-net",
+                        "bs": "harness real-time e-markets"
+                    }
                 },
                 {
                     "id": 2,
-                    "name": "john",
-                    "money": 0.99
+                    "name": "Ervin Howell",
+                    "username": "Antonette",
+                    "email": "Shanna@melissa.tv",
+                    "address": {
+                        "street": "Victor Plains",
+                        "suite": "Suite 879",
+                        "city": "Wisokyburgh",
+                        "zipcode": "90566-7771",
+                        "geo": {
+                            "lat": "-43.9509",
+                            "lng": "-34.4618"
+                        }
+                    },
+                    "phone": "010-692-6593 x09125",
+                    "website": "anastasia.net",
+                    "company": {
+                        "name": "Deckow-Crist",
+                        "catchPhrase": "Proactive didactic contingency",
+                        "bs": "synergize scalable supply-chains"
+                    }
                 }
             ],
             "headers": {
+                "Date": "Fri, 16 Mar 2018 09:29:27 GMT",
+                "Content-Type": "application/json; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Set-Cookie": "__cfduid=d82c068e08f94f16c3d3a84276c564fc41521192567; expires=Sat, 16-Mar-19 09:29:27 GMT; path=/; domain=.typicode.com; HttpOnly",
                 "X-Powered-By": "Express",
                 "Vary": "Origin, Accept-Encoding",
                 "Access-Control-Allow-Credentials": "true",
-                "Cache-Control": "no-cache",
+                "Cache-Control": "public, max-age=14400",
                 "Pragma": "no-cache",
-                "Expires": "-1",
-                "X-Total-Count": "3",
+                "Expires": "Fri, 16 Mar 2018 13:29:27 GMT",
+                "X-Total-Count": "10",
                 "Access-Control-Expose-Headers": "X-Total-Count",
                 "X-Content-Type-Options": "nosniff",
-                "Content-Type": "application/json; charset=utf-8",
-                "Content-Length": "121",
-                "ETag": "W/\"79-tdT0MLFus3fdBdRNdiLOfSBdaO8\"",
-                "Date": "Thu, 15 Mar 2018 11:10:26 GMT",
-                "Connection": "keep-alive"
+                "Etag": "W/\"45c-uonB+X+ufKydp7NkoDHZYVCTYEk\"",
+                "Content-Encoding": "gzip",
+                "Via": "1.1 vegur",
+                "CF-Cache-Status": "HIT",
+                "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "Server": "cloudflare",
+                "CF-RAY": "3fc63208ce6340a6-HAM"
             }
         },
         "schema": {
@@ -99,27 +1087,257 @@
                             "name": {
                                 "type": "string"
                             },
-                            "money": {
-                                "type": "number"
+                            "username": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "address": {
+                                "type": "object",
+                                "properties": {
+                                    "street": {
+                                        "type": "string"
+                                    },
+                                    "suite": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "zipcode": {
+                                        "type": "string"
+                                    },
+                                    "geo": {
+                                        "type": "object",
+                                        "properties": {
+                                            "lat": {
+                                                "type": "string"
+                                            },
+                                            "lng": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "lat",
+                                            "lng"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "city",
+                                    "geo",
+                                    "street",
+                                    "suite",
+                                    "zipcode"
+                                ]
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "website": {
+                                "type": "string"
+                            },
+                            "company": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "catchPhrase": {
+                                        "type": "string"
+                                    },
+                                    "bs": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "bs",
+                                    "catchPhrase",
+                                    "name"
+                                ]
                             }
                         },
                         "required": [
+                            "address",
+                            "company",
+                            "email",
                             "id",
-                            "money",
-                            "name"
+                            "name",
+                            "phone",
+                            "username",
+                            "website"
                         ]
                     },
                     "example": [
                         {
                             "id": 1,
-                            "name": "jan",
-                            "money": 0.23
+                            "name": "Leanne Graham",
+                            "username": "Bret",
+                            "email": "Sincere@april.biz",
+                            "address": {
+                                "street": "Kulas Light",
+                                "suite": "Apt. 556",
+                                "city": "Gwenborough",
+                                "zipcode": "92998-3874",
+                                "geo": {
+                                    "lat": "-37.3159",
+                                    "lng": "81.1496"
+                                }
+                            },
+                            "phone": "1-770-736-8031 x56442",
+                            "website": "hildegard.org",
+                            "company": {
+                                "name": "Romaguera-Crona",
+                                "catchPhrase": "Multi-layered client-server neural-net",
+                                "bs": "harness real-time e-markets"
+                            }
                         },
                         {
                             "id": 2,
-                            "name": "john",
-                            "money": 0.99
+                            "name": "Ervin Howell",
+                            "username": "Antonette",
+                            "email": "Shanna@melissa.tv",
+                            "address": {
+                                "street": "Victor Plains",
+                                "suite": "Suite 879",
+                                "city": "Wisokyburgh",
+                                "zipcode": "90566-7771",
+                                "geo": {
+                                    "lat": "-43.9509",
+                                    "lng": "-34.4618"
+                                }
+                            },
+                            "phone": "010-692-6593 x09125",
+                            "website": "anastasia.net",
+                            "company": {
+                                "name": "Deckow-Crist",
+                                "catchPhrase": "Proactive didactic contingency",
+                                "bs": "synergize scalable supply-chains"
+                            }
                         }
+                    ]
+                }
+            }
+        },
+        "spec": {}
+    },
+    {
+        "request": {
+            "method": "POST",
+            "endpoint": "https://jsonplaceholder.typicode.com/posts",
+            "query": {},
+            "body": {
+                "id": "",
+                "title": "A Title",
+                "author": "Someone"
+            },
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.0.0b11"
+            },
+            "proxies": {},
+            "timeout": [
+                null,
+                null
+            ],
+            "cert": null,
+            "sslVerify": true,
+            "allowRedirects": true,
+            "timestamp": {
+                "utc": "2018-03-16T09:29:27.566241+00:00",
+                "local": "2018-03-16T10:29:27.566241+01:00"
+            }
+        },
+        "response": {
+            "status": 201,
+            "seconds": 0.38473,
+            "body": {
+                "id": 101,
+                "title": "A Title",
+                "author": "Someone"
+            },
+            "headers": {
+                "Date": "Fri, 16 Mar 2018 09:29:27 GMT",
+                "Content-Type": "application/json; charset=utf-8",
+                "Content-Length": "60",
+                "Connection": "keep-alive",
+                "Set-Cookie": "__cfduid=df25a183aebda7d3d54759d4cbaf3cdb61521192567; expires=Sat, 16-Mar-19 09:29:27 GMT; path=/; domain=.typicode.com; HttpOnly",
+                "X-Powered-By": "Express",
+                "Vary": "Origin, X-HTTP-Method-Override, Accept-Encoding",
+                "Access-Control-Allow-Credentials": "true",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+                "Expires": "-1",
+                "Access-Control-Expose-Headers": "Location",
+                "Location": "http://jsonplaceholder.typicode.com/posts/101",
+                "X-Content-Type-Options": "nosniff",
+                "Etag": "W/\"3c-I8xOPMOXFtvjJ6cfFbSUzLynvcM\"",
+                "Via": "1.1 vegur",
+                "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "Server": "cloudflare",
+                "CF-RAY": "3fc632099bf340ca-HAM"
+            }
+        },
+        "schema": {
+            "exampled": true,
+            "version": "draft04",
+            "request": {
+                "body": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "author": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "author",
+                        "id",
+                        "title"
+                    ]
+                },
+                "query": {
+                    "type": "object",
+                    "properties": {}
+                }
+            },
+            "response": {
+                "status": {
+                    "enum": [
+                        200,
+                        201,
+                        204,
+                        400,
+                        404
+                    ]
+                },
+                "body": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "example": 101
+                        },
+                        "title": {
+                            "type": "string",
+                            "example": "A Title"
+                        },
+                        "author": {
+                            "type": "string",
+                            "example": "Someone"
+                        }
+                    },
+                    "required": [
+                        "author",
+                        "id",
+                        "title"
                     ]
                 }
             }
