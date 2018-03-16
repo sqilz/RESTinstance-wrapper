@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'pybot --outputdir results Tests/REST.robot'
+        sh 'robot -d results -i Smoke Tests/REST.robot'
       }
     }
   }
