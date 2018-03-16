@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'robot -d results -i Smoke Tests/REST.robot'
+        sh '''robot -d results -i Smoke Tests/REST.robot
+which python'''
       }
     }
   }
