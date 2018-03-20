@@ -16,7 +16,7 @@ Query Resource with request parameters
 Get Resource number
     [Documentation]  Get user with number
     [Arguments]  ${resource}  ${number}
-    GET                         ${resource}${number}
+    GET                         ${resource}/${number}
 
 Post To Resource
     [Documentation]  Posts JSON to resource
