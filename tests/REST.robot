@@ -1,13 +1,11 @@
 *** Settings ***
 Documentation   Example RESTinstance project testing on a https://jsonplaceholder.typicode.com you can also test on a JSON-server set up locally, just change the URL in variables.py (also make sure you have the resources in your database.json)
-Variables       ../resources/variables.py
-Library         REST                  ${URL}
+Resource        ../resources/suite_settings.robot
 Resource        ../resources/Outputs.robot
 Resource        ../resources/Validate.robot
 Resource        ../resources/Requests.robot
-Suite Teardown  Rest instances    ${OUTPUTDIR}/json/spec.json
 Test Setup      Validate.Set expectations
-
+Suite Teardown  suite_settings.Output rest instance spec
 *** Test Cases ***
 Save the first post in a JSON file
     [Tags]  Smoke  Get  Validate
@@ -30,12 +28,12 @@ Get two users from the database
     [Tags]  Smoke  Get  Validate
         Requests.Query Resource with request parameters  /users    ?_limit=2
         Validate.response status                         200
-        Outputs.body                                     two_users
+        Outputs.body                                     two_usersgi
 
 Check to see if TODO six is completed
     [Tags]  boolean  Get  Validate
         Requests.Get Resource                            /todos/6
-        Validate.Bollean field                           completed  false
+        Validate.Boolean field                           completed  false
 
 Add a new post
     [Tags]  post  Validate
@@ -51,4 +49,4 @@ Modify user one
     [Tags]  patch  String  Validate  String
         Requests.Modify resource                         /users/3  {"username":"Samantha"}
         Validate.response status                         200
-        Validate.String field                            username  Samanthas
+        Validate.String field                            username  Samantha
