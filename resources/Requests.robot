@@ -21,9 +21,25 @@ Get Resource number
 Post To Resource
     [Documentation]  Posts JSON to resource
     [Arguments]  ${resource}  ${JSON}
-    POST                        /${resource}  ${JSON}
+    POST                        ${resource}  ${JSON}
 
-Update Resource
-    [Documentation]  PUTs the specified JSON into a resource
-    [Arguments]  ${JSON}  ${url}=null ${resource}=null ${number}=null
-    PUT                        ${url}  ${resource}${number}  ${JSON}
+
+# The difference between PATCH and PUT are just like the keyword name suggests
+# for example, we have a user in a databse (JSON) as such
+# {
+#   "name": "bob",
+#    "id": 1,
+#    "title": "mr"
+#  }
+# PATCH with JSON {"name":"joe"}     would only update the name field and do nothing else
+# PUT with the same above JSON       would replace the name to joe, and also remove the "title" as it replaces the user entirely
+#                                    it would also remove the id if it was specified by the client not the server
+Replace Resource
+    [Documentation]  Replaces/updates the existing resource with new data using PUT, can specify new
+    [Arguments]     ${resource_or_url}   ${json}
+    PUT             ${resource_or_url}   ${json}
+
+Modify Resource
+    [Documentation]  Modifies/updates the resource using PATCH
+    [Arguments]     ${resource_or_url}   ${json}
+    PATCH           ${resource_or_url}   ${json}
