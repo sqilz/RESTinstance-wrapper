@@ -6,6 +6,7 @@ Resource        ../resources/Validate.robot
 Resource        ../resources/Requests.robot
 Test Setup      Validate.Set expectations
 Suite Teardown  suite_settings.Output rest instance spec
+
 *** Test Cases ***
 Save the first post in a JSON file
     [Tags]  Smoke  Get  Validate
@@ -16,6 +17,7 @@ Save the first post in a JSON file
 Save all available users in a JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource                            /users
+        Validate.response status                         200
         Outputs.body                                     All_users
 
 Validate user one and save
