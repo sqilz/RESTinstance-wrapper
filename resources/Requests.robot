@@ -6,22 +6,24 @@ Library  REST  ${URL}
 Get Resource
     [Documentation]  Returns the contents of a resource
     [Arguments]  ${resource}
-    GET                         /${resource}
+    GET                         ${resource}
 
 Query Resource with request parameters
     [Documentation]  Returns the resource with the request parameters
     [Arguments]  ${resource}  ${request_parameters}  #e.g.  ?_limit=3   ->  /user?_limit=3
-    GET                         /${resource}${request_parameters}
+    GET                         ${resource}${request_parameters}
 
 Get Resource number
     [Documentation]  Get user with number
     [Arguments]  ${resource}  ${number}
-    GET                         /${resource}/${number}
+    GET                         ${resource}${number}
 
 Post To Resource
     [Documentation]  Posts JSON to resource
     [Arguments]  ${resource}  ${JSON}
     POST                        /${resource}  ${JSON}
 
-Put to Resource
-    
+Update Resource
+    [Documentation]  PUTs the specified JSON into a resource
+    [Arguments]  ${JSON}  ${url}=null ${resource}=null ${number}=null
+    PUT                        ${url}  ${resource}${number}  ${JSON}

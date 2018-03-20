@@ -9,4 +9,5 @@ Response status
     Integer             response status       ${number}
 
 Set expectations
+    [Documentation]  Expects JSON response status from the REST API with the codes specified, tests with a status code not included in the below json string will fail
     Expect response         {"status": { "enum": [200, 201, 204, 400, 404] } }
