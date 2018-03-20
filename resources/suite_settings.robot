@@ -1,6 +1,5 @@
 *** Settings ***
 Variables       ../resources/variables.py
-Resource        variables.py
 Library         REST                  ${URL}
 
 *** Keywords ***
