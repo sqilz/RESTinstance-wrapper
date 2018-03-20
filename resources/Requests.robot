@@ -22,3 +22,6 @@ Post To Resource
     [Documentation]  Posts JSON to resource
     [Arguments]  ${resource}  ${JSON}
     POST                        /${resource}  ${JSON}
+
+Put to Resource
+    
