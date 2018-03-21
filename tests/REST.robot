@@ -12,25 +12,25 @@ Save the first post in a JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource number                     /posts    /1
         Validate.Response status                         200
-        WriteJSON.body                                     first_post
+        WriteJSON.body                                   first_post
 
 Save all available users in a JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource                            /users
         Validate.response status                         200
-        WriteJSON.body                                     All_users
+        WriteJSON.body                                   All_users
 
 Validate user one and save
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource number                     /users    /1
         Validate.response status                         200
-        WriteJSON.body                                     user_one
+        WriteJSON.body                                   user_one
 
 Get two users from the database
     [Tags]  Smoke  Get  Validate
         Requests.Query Resource with request parameters  /users    ?_limit=2
         Validate.response status                         200
-        WriteJSON.body                                     two_users
+        WriteJSON.body                                   two_users
 
 Check to see if TODO six is completed
     [Tags]  boolean  Get  Validate
