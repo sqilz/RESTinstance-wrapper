@@ -43,3 +43,8 @@ Modify Resource
     [Documentation]     Modifies/updates the resource using PATCH
     [Arguments]         ${resource_or_url}    ${json}
         PATCH           ${resource_or_url}    ${json}
+
+Remove Resource
+    [Documentation]     Removes an existing resource
+    [Arguments]         ${resource_or_url}
+        DELETE          ${resource_or_url}
