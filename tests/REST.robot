@@ -39,7 +39,7 @@ Check to see if TODO six is completed
 
 Add a new post
     [Tags]  post  Validate
-        Requests.Post to Resource                        /posts/1    {"id": "","title": "A Title", "author": "Somesone"}
+        Requests.Post to Resource                        /posts/    {"id": "","title": "A Title", "author": "Somesone"}
         Validate.Response status                         201
 
 Update /posts/2 data
