@@ -48,7 +48,18 @@ Update /posts/2 data
         Validate.response status                         200
 
 Modify user one
-    [Tags]  patch  String  Validate  String
+    [Tags]  patch  String  Validate
         Requests.Modify resource                         /users/3  {"username":"Samantha"}
         Validate.response status                         200
         Validate.String field                            username  Samantha
+
+
+Remove user one and some posts
+    [Tags]  delete  String  Validate
+        #Check if such user exists
+        Requests.Get Resource number                     /users    1
+        Validate.Integer field                           id        1
+        Validate.String field                            name      Leanne Graham
+        Response Status                                  200
+
+
