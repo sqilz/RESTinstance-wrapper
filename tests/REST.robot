@@ -61,5 +61,6 @@ Remove user one and some posts
         Validate.Integer field                           id        1
         Validate.String field                            name      Leanne Graham
         Response Status                                  200
-
+        Requests.Remove Resource                         /users/1
+        Validate.Response status                         200
 
