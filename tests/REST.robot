@@ -52,6 +52,7 @@ Modify user one
         Requests.Modify resource                         /users/3  {"username":"Samantha"}
         Validate.response status                         200
         Validate.String field                            username  Samantha
+        Validate.Missing field                           user
 
 
 Remove user one and some posts

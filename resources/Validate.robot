@@ -29,3 +29,7 @@ Set expectations
     [Documentation]      Expects JSON response status from the REST API with the codes specified, tests with a status code not included in the below json string will fail
         Expect response  {"status": { "enum": [200, 201, 204, 400, 404] } }
 
+Missing Field
+    [Documentation]     Check if a field is missing
+    [Arguments]         ${field_name}
+        MISSING         response body ${field_name}
