@@ -7,7 +7,10 @@ Response status
     [Arguments]          ${number}
     [Documentation]      Checks if the server response status is ${number}
         Integer          response status    ${number}
-
+Integer Field
+    [Arguments]          ${field_name}  ${number}
+    [Documentation]      Checks if a field contains an integer
+        Integer          response body ${field_name}  ${number}
 String Field
     [Documentation]      Validate the string field, pass then name of a field to validate as well as the expected result.
     [Arguments]          ${field_name}    ${text}
