@@ -34,7 +34,9 @@ To get the report simply clone it
     git clone https://github.com/sqilz/REST-Api-Selenium-tests.git
 ```
 
-Navigate into the test directory and run the following command
+Execute ```run.bat``` or ```run.sh``` to run the tests or
+
+Navigate into the directory and run the following command
 
 ```
     robot -d results tests/REST.robot
