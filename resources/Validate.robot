@@ -8,17 +8,17 @@ Response status
     [Documentation]      Checks if the server response status is ${number}
         Integer          response status    ${number}
 Integer Field
-    [Arguments]          ${field_name}  ${number}
+    [Arguments]          ${field_name}    ${number}
     [Documentation]      Checks if a field contains an integer
-        Integer          response body ${field_name}  ${number}
+        Integer          response body ${field_name}    ${number}
 String Field
     [Documentation]      Validate the string field, pass then name of a field to validate as well as the expected result.
     [Arguments]          ${field_name}    ${text}
         String           response body ${field_name}    ${text}
 
 Boolean Field
-    [Documentation]     Validate whether a field is true or false.
-    [Arguments]          ${field_name}  ${value}
+    [Documentation]      Validate whether a field is true or false.
+    [Arguments]          ${field_name}    ${value}
         Boolean          response body ${field_name}    ${value}
 
 Is Null Field
@@ -30,6 +30,10 @@ Set expectations
         Expect response  {"status": { "enum": [200, 201, 204, 400, 404] } }
 
 Missing Field
-    [Documentation]     Check if a field is missing
-    [Arguments]         ${field_name}
-        MISSING         response body ${field_name}
+    [Documentation]      Check if a field is missing
+    [Arguments]          ${field_name}
+        MISSING          response body ${field_name}
+Object field
+    [Documentation]      Checks for JSON object, can check if an object has fields. When passing ${required_fields} make sure your fields are surrounded by Quotation marks " and separate them using commas ,
+    [Arguments]          ${field_name}    ${required_fields}
+    Object               response ${field_name}    required=[${required_fields}]
