@@ -1,6 +1,6 @@
 # REST Api Selenium tests
 
-A project to demonstrate the use of [RESTinstance](https://github.com/asyrjasalo/RESTinstance) and Selenium2library for testing JSON REST APIs
+A project to demonstrate the use of [RESTinstance](https://github.com/asyrjasalo/RESTinstance) and SeleniumLibrary for testing JSON REST APIs
 
 ## Getting Started
 
@@ -18,9 +18,9 @@ You will need:
     pip install --upgrade RESTinstance
 ```
 
-[Selenium2Library](https://github.com/robotframework/Selenium2Library)
+[SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary)
 ```
-    pip install --upgrade robotframework-selenium2library
+    pip install --upgrade robotframework-seleniumlibrary
 ```
 [SeleniumHQ browser drivers](https://www.seleniumhq.org/download/)
 
