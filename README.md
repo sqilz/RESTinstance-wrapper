@@ -47,5 +47,5 @@ Navigate into the test directory and run the following command
 
 ## Acknowledgments
 
-* [Anssi Syrjäsalo] (https://github.com/asyrjasalo/) creator of RESTinstance
+* [Anssi Syrjäsalo](https://github.com/asyrjasalo/) creator of RESTinstance
 
