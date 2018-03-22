@@ -11,18 +11,21 @@ See deployment for notes on how to deploy the project on a live system.
 
 You will need:
 
-```
+
 [Python 3](https://www.python.org/downloads/)
 
 [RESTinstance library](https://github.com/asyrjasalo/RESTinstance)
+```
     pip install --upgrade RESTinstance
+```
 
 [Selenium2Library](https://github.com/robotframework/Selenium2Library)
+```
     pip install --upgrade robotframework-selenium2library
-
+```
 [SeleniumHQ browser drivers](https://www.seleniumhq.org/download/)
 
-```
+
 
 ### Installing and Running the tests
 
