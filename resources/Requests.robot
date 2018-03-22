@@ -14,7 +14,7 @@ Query Resource with request parameters
         GET             ${resource}${request_parameters}
 
 Get Resource number
-    [Documentation]     Get user with number
+    [Documentation]     Get a resource with number
     [Arguments]         ${resource}    ${number}
         GET             ${resource}/${number}
 

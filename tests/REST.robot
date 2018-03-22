@@ -26,6 +26,7 @@ Validate user one and save
         Validate.response status                         200
         Validate.Object Field                            body                   "id", "name"
         Validate.Object Field                            body address geo       "lat", "lng"
+        Validate.Object Field                            body                   #second argument is optional
         WriteJSON.body                                   user_one
 
 Get two users from the database
@@ -37,6 +38,7 @@ Get two users from the database
 Check to see if TODO six is completed
     [Tags]  boolean  Get  Validate
         Requests.Get Resource                            /todos/6
+        Validate.Response status                         200
         Validate.Boolean field                           completed              false
 
 Add a new post
