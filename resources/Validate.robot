@@ -1,6 +1,6 @@
 *** Settings ***
-Variables               variables.py
-Library                 REST    ${URL}
+Variables                variables.py
+Library                  REST    ${URL}
 
 *** Keywords ***
 Response status
