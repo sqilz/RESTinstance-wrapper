@@ -1,4 +1,3 @@
-# -*- coding: robot -*- 
 *** Settings ***
 Documentation   Example RESTinstance project testing on a https://jsonplaceholder.typicode.com you can also test on a JSON-server set up locally, just change the URL in variables.py (also make sure you have the resources in your database.json)
 Resource        ../resources/suite_settings.robot
@@ -69,3 +68,19 @@ Remove user one and some posts
         Requests.Remove Resource                         /users/1
         Validate.Response status                         200
 
+Check server HEAD and OPTIONS
+    [Tags]  head  options
+        # / is for the URL specified in the variables.py
+        # jsonplaceholder.typicode.com (url from the variables.py) doesn't specify the server options
+        # and is returning a 200 response status code
+        Requests.Return Head                            /
+        Requests.Return Options                         /
+        Validate.Response status                        200
+        Requests.Return Head                            /posts/6
+        Requests.Return Options                         /posts/6
+        Validate.Response status                        200
+
+        # checking an URL
+        Requests.Return Head                            http://google.com/
+        # Google doesn't allow the OPTIONS Http method and is returning a 405 status code
+        Requests.Return Options                         http://google.com/

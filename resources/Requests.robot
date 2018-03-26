@@ -48,3 +48,13 @@ Remove Resource
     [Documentation]     Removes an existing resource
     [Arguments]         ${resource_or_url}
         DELETE          ${resource_or_url}
+
+Return Head
+    [Documentation]     Returns a head of a requested URI
+    [Arguments]         ${resource_or_url}
+        HEAD            ${resource_or_url}
+
+Return Options
+    [Documentation]     Returns the options of a resource or entire server
+    [Arguments]         ${resource_or_url}
+        OPTIONS         ${resource_or_url}
