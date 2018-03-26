@@ -5,8 +5,8 @@ Library                 REST        ${URL}
 *** Keywords ***
 Get Resource
     [Documentation]     Returns the contents of a resource
-    [Arguments]         ${resource}
-        GET             ${resource}
+    [Arguments]         ${resource}    ${parameters}=
+        GET             ${resource}    query=${parameters}
 
 Query Resource with request parameters
     [Documentation]     Returns the resource with the request parameters
