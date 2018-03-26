@@ -37,9 +37,16 @@ Missing Field
 Object field
     [Documentation]      Checks for JSON object, can check if an object has fields. When passing ${required_fields} make sure your fields are surrounded by Quotation marks " and separate them using commas ,
     [Arguments]          ${field_name}    ${required_fields}=
-    Object               response ${field_name}    required=[${required_fields}]  #required_fields is optional
+        Object           response ${field_name}    required=[${required_fields}]  #required_fields is optional
 
 JSON array
     [Documentation]      Checks if a field/resource is an Array
     [Arguments]          ${field_name}    ${resource}=
-    Array                response ${field_name}    ${resource}
+        Array            response ${field_name}    ${resource}
+
+Number field
+    # a test case example of this keyword cannot be made using jsonplaceholder.typicode.com
+    # as none of the test data have a number/decimal/float field (there are strings that contains a decimal only but they are strings...)
+    [Documentation]      Allows validation of decimal number fields such as 0.00
+    [Arguments]          ${field_name}    ${value}
+        Number           response ${field_name}    ${value}
