@@ -34,10 +34,7 @@ Get two users from the database
     [Tags]  Smoke  Get  Validate  array
         Requests.Query Resource with request parameters  /users                 ?_limit=2
         Validate.response status                         200
-
         WriteJSON.body                                   two_users
-        # You can also check if an outputted JSON file is an array
-       # Validate.JSON Array                              two_users
 
 Check to see if TODO six is completed
     [Tags]  boolean  Get  Validate
