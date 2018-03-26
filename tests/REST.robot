@@ -80,7 +80,6 @@ Check server HEAD and OPTIONS
         Requests.Return Head                            /posts/6
         Requests.Return Options                         /posts/6
         Validate.Response status                        200
-
         # checking an URL
         Requests.Return Head                            http://google.com/
         # Google doesn't allow the OPTIONS Http method and is returning a 405 status code
@@ -93,4 +92,3 @@ Array Validation
     #for the below array validation to work you need to have a json file with the data to validate
     WriteJSON.body  test
     Validate.JSON array file                            ${OUTPUTDIR}/JSON/test.json
-
