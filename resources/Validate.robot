@@ -38,3 +38,8 @@ Object field
     [Documentation]      Checks for JSON object, can check if an object has fields. When passing ${required_fields} make sure your fields are surrounded by Quotation marks " and separate them using commas ,
     [Arguments]          ${field_name}    ${required_fields}=
     Object               response ${field_name}    required=[${required_fields}]  #required_fields is optional
+
+JSON array
+    [Documentation]      Checks if a field/resource is an Array
+    [Arguments]          ${field_name}    ${resource}=
+    Array                response ${field_name}    ${resource}
