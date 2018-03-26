@@ -28,15 +28,16 @@ Validate user one and save
         Validate.Object Field                            body address geo       "lat", "lng"
         Validate.Object Field                            body                   #second argument is optional
         WriteJSON.body                                   user_one
+        WriteJSON.custom                                 response body address geo lat   string_number
 
 Get two users from the database
     [Tags]  Smoke  Get  Validate  array
         Requests.Query Resource with request parameters  /users                 ?_limit=2
         Validate.response status                         200
-        Validate.JSON Array                              body address
+
         WriteJSON.body                                   two_users
         # You can also check if an outputted JSON file is an array
-        Validate.JSON Array                              two_users
+       # Validate.JSON Array                              two_users
 
 Check to see if TODO six is completed
     [Tags]  boolean  Get  Validate
@@ -87,3 +88,12 @@ Check server HEAD and OPTIONS
         Requests.Return Head                            http://google.com/
         # Google doesn't allow the OPTIONS Http method and is returning a 405 status code
         Requests.Return Options                         http://google.com/
+
+Array Validation
+    [Tags]  Array  Validate
+    Requests.Get Resource                               /users?_limit=10
+    Validate.JSON array custom                          request query _limit  10
+    #for the below array validation to work you need to have a json file with the data to validate
+    WriteJSON.body  test
+    Validate.JSON array file                            ${OUTPUTDIR}/JSON/test.json
+
