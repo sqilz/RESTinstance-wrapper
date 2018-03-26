@@ -3,6 +3,10 @@ Variables                variables.py
 Library                  REST    ${URL}
 
 *** Keywords ***
+Set expectations
+    [Documentation]      Expects JSON response status from the REST API with the codes specified, tests with a status code not included in the below json string will fail
+        Expect response  {"status": { "enum": [200, 201, 204, 400, 404, 405] } }
+
 Response status
     [Arguments]          ${number}
     [Documentation]      Checks if the server response status is ${number}
@@ -25,9 +29,6 @@ Is Null Field
     [Documentation]      Checks if a field is null. jsonplaceholder.typicode.com doesn't have any null fields in its database so it will not be used in the SUITE
     [Arguments]          ${field_name}
         Null             ${field_name}
-Set expectations
-    [Documentation]      Expects JSON response status from the REST API with the codes specified, tests with a status code not included in the below json string will fail
-        Expect response  {"status": { "enum": [200, 201, 204, 400, 404] } }
 
 Missing Field
     [Documentation]      Check if a field is missing
