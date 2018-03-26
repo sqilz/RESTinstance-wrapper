@@ -39,10 +39,15 @@ Object field
     [Arguments]          ${field_name}    ${required_fields}=
         Object           response ${field_name}    required=[${required_fields}]  #required_fields is optional
 
-JSON array
-    [Documentation]      Checks if a field/resource is an Array
-    [Arguments]          ${field_name}    ${resource}=
-        Array            response ${field_name}    ${resource}
+JSON array custom
+    [Documentation]      Checks if a field/resource is an Array, request query
+    [Arguments]          ${request}=    ${value}=
+        Array            ${request}     ["${value}"]
+
+JSON array file
+    [Documentation]      Checks if a resource is an Array. Pass in a path to the JSON file
+    [Arguments]          ${path}
+        Array            response body  ${path}
 
 Number field
     # a test case example of this keyword cannot be made using jsonplaceholder.typicode.com
