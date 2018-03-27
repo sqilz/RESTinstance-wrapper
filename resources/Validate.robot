@@ -52,7 +52,7 @@ Object field
     ...                  make sure your fields are surrounded by
     ...                  Quotation marks " and separate them using commas ,
     [Arguments]          ${field_name}    ${required_fields}=
-        #required_fields is optional
+        # required_fields is optional
         Object           response ${field_name}    required=[${required_fields}]
 
 JSON array custom
@@ -68,7 +68,7 @@ JSON array file
 Number field
     # a test case example of this keyword cannot be made using jsonplaceholder.typicode.com
     # as none of the test data have a number/decimal/float field
-    #(there are strings that contain a decimal, but they are strings...)
+    # (there are strings that contain a decimal, but they are strings...)
     [Documentation]      Allows validation of decimal number fields such as 0.00
     [Arguments]          ${field_name}    ${value}
         Number           response ${field_name}    ${value}
