@@ -91,9 +91,10 @@ Check server HEAD and OPTIONS
         Requests.Return Options                         http://google.com/
 
 Array Validation
-    [Tags]  Array  Validate
-    Requests.Get Resource                               /users?_limit=10        ${EMPTY}
-    Validate.JSON array custom                          request query _limit    10
-    #for the below array validation to work you need to have a json file with the data to validate
-    WriteJSON.body  test
-    Validate.JSON array file                            ${OUTPUTDIR}/JSON/test.json
+        [Tags]  Array  Validate
+        Requests.Get Resource                           /users?_limit=10        ${EMPTY}
+        Validate.JSON array custom                      request query _limit    10
+        # for the below array validation to work
+        # you need to have a json file with the data to validate
+        WriteJSON.body  test
+        Validate.JSON array file                        ${OUTPUTDIR}/JSON/test.json
