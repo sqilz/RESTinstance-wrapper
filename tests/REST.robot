@@ -13,13 +13,13 @@ Test Setup      Validate.Set expectations
 Suite Teardown  suite_settings.Output rest instance spec
 
 *** Test Cases ***
-Save the first post in a JSON file
+Save first post in JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource number                     /posts                 /1
         Validate.Response status                         200
         WriteJSON.body                                   first_post
 
-Save all available users in a JSON file
+Save all users in JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource                            /users
         Validate.response status                         200
@@ -35,13 +35,13 @@ Validate user one and save
         WriteJSON.body                                   user_one
         WriteJSON.custom                                 response body address geo lat   string_number
 
-Get two users from the database
+Get two users
     [Tags]  Smoke  Get  Validate  array
         Requests.Query Resource with request parameters  /users                 ?_limit=2
         Validate.response status                         200
         WriteJSON.body                                   two_users
 
-Check to see if TODO six is completed
+Check TODO six is completed
     [Tags]  boolean  Get  Validate
         Requests.Get Resource                            /todos/6
         Validate.Response status                         200
@@ -64,7 +64,7 @@ Modify user one
         Validate.String field                            username               Samantha
         Validate.Missing field                           user
 
-Remove user one and some posts
+Remove user one
     [Tags]  delete  String  Validate
         #Check if such user exists
         Requests.Get Resource number                     /users                 1
