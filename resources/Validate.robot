@@ -9,7 +9,6 @@ Set expectations
     ...                  the REST API with the codes specified,
     ...                  tests with a status code not included
     ...                  in the below json string will fail
-
         Expect response  {"status": { "enum": [200, 201, 204, 400, 404, 405] } }
 
 Response status
@@ -26,7 +25,6 @@ String Field
     [Documentation]      Validate the string field, pass then
     ...                  name of a field to validate as well
     ...                  as the expected result.
-
     [Arguments]          ${field_name}    ${text}
         String           response body ${field_name}    ${text}
 

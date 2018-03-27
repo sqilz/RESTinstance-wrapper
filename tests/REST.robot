@@ -24,6 +24,7 @@ Save all users in JSON file
         Validate.response status                         200
         WriteJSON.body                                   All_users
 
+
 Validate user one and save
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource number                     /users                 /1
