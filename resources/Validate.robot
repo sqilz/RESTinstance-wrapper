@@ -1,6 +1,7 @@
 *** Settings ***
 Variables                variables.py
-Library                  REST    ${URL}
+Library                  REST
+...                      ${URL}
 
 *** Keywords ***
 Set expectations
