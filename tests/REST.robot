@@ -1,3 +1,5 @@
+# -*- coding: robot -*-:w
+
 *** Settings ***
 Documentation   Example RESTinstance project testing on
 ...             https://jsonplaceholder.typicode.com you
@@ -21,7 +23,7 @@ Save first post in JSON file
 
 Save all users in JSON file
     [Tags]  Smoke  Get  Validate
-        Requests.Get Resource                            /users
+        Requests.Get Resource                            /users                 ${EMPTY}
         Validate.response status                         200
         WriteJSON.body                                   All_users
 
@@ -43,7 +45,7 @@ Get two users
 
 Check TODO six is completed
     [Tags]  boolean  Get  Validate
-        Requests.Get Resource                            /todos/6
+        Requests.Get Resource                            /todos/6               ${EMPTY}
         Validate.Response status                         200
         Validate.Boolean field                           completed              false
 
@@ -92,8 +94,8 @@ Check server HEAD and OPTIONS
 
 Array Validation
     [Tags]  Array  Validate
-    Requests.Get Resource                               /users?_limit=10
-    Validate.JSON array custom                          request query _limit  10
+    Requests.Get Resource                               /users?_limit=10        ${EMPTY}
+    Validate.JSON array custom                          request query _limit    10
     #for the below array validation to work you need to have a json file with the data to validate
     WriteJSON.body  test
     Validate.JSON array file                            ${OUTPUTDIR}/JSON/test.json

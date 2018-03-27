@@ -1,11 +1,12 @@
 *** Settings ***
 Variables               variables.py
-Library                 REST        ${URL}
+Library                 REST
+...                     ${URL}
 
 *** Keywords ***
 Get Resource
     [Documentation]     Returns the contents of a resource
-    [Arguments]         ${resource}    ${parameters}=
+    [Arguments]         ${resource}    ${parameters}
         GET             ${resource}    query=${parameters}
 
 Query Resource with request parameters

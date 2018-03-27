@@ -59,7 +59,7 @@ Object field
 
 JSON array custom
     [Documentation]      Checks if a field/resource is an Array, request query
-    [Arguments]          ${request}=    ${value}=
+    [Arguments]          ${request}     ${value}
         Array            ${request}     ["${value}"]
 
 JSON array file
