@@ -1,12 +1,9 @@
-# -*- coding: robot -*-:w
-
 *** Settings ***
 Documentation   Example RESTinstance project testing on
 ...             https://jsonplaceholder.typicode.com you
 ...             can also test on a JSON-server set up locally,
 ...             just change the URL in variables.py (also make
 ...             sure you have the resources in your database.json)
-
 Resource        ../resources/suite_settings.robot
 Resource        ../resources/WriteJSON.robot
 Resource        ../resources/Validate.robot
