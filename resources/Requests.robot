@@ -26,7 +26,7 @@ Post To Resource
 
 
 # The difference between PATCH and PUT are just like the keyword name suggests
-# for example, we have a user in a databse (JSON) as such
+# for example, we have a user in a database (JSON) as such
 # {
 #   "name": "bob",
 #    "id": 1,
