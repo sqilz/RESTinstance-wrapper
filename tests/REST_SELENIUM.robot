@@ -1,4 +1,0 @@
-*** Settings ***
-*** Variables ***
-*** Test Cases ***
-
