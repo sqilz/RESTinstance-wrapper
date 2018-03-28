@@ -28,6 +28,14 @@ String Field
     [Arguments]          ${field_name}    ${text}
         String           response body ${field_name}    ${text}
 
+String Field partial
+    [Documentation]      Check if a field contains a part of a string
+    ...                  can use many strings in @{text} separated by two spaces
+    [Arguments]          ${field_name}    @{text}
+        ${string}        String    response body ${field_name}
+                         Should Contain Any    ${string}    @{text}
+
+
 Boolean Field
     [Documentation]      Validate whether a field is true or false.
     [Arguments]          ${field_name}    ${value}

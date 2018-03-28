@@ -98,3 +98,7 @@ Array Validation
         # you need to have a json file with the data to validate
         WriteJSON.body  test
         Validate.JSON array file                        ${OUTPUTDIR}/JSON/test.json
+Partial String
+        [Tags]  partial-string
+        Requests.Get Resource Number                     /users                  1
+        Validate.String Field partial                    name                    Lea  rrggrgr  Lxxel  street  city
