@@ -1,4 +1,4 @@
-# REST Api Selenium tests
+# RESTinstance wrapper
 
 A project to demonstrate the use of [RESTinstance](https://github.com/asyrjasalo/RESTinstance) and SeleniumLibrary for testing JSON REST APIs
 
