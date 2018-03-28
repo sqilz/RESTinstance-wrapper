@@ -4,14 +4,14 @@ Library                 REST
 ...                     ${URL}
 
 *** Keywords ***
-body
+Body
     [Arguments]         ${filename}
     [Documentation]     Outputs the body of a request,
     ...                 takes one argument that will be
     ...                 the name of the output file.json
 
         Output          response body         ${OUTPUTDIR}/json/${filename}.json
-header
+Header
     [Arguments]         ${filename}
     [Documentation]     Outputs a header, takes one argument
      ...                that will be the name of the output file.json
