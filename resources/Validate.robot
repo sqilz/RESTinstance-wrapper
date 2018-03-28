@@ -12,9 +12,9 @@ Set expectations
         Expect response  {"status": { "enum": [200, 201, 204, 400, 404, 405] } }
 
 Response status
-    [Arguments]          ${number}
+    [Arguments]          @{number}
     [Documentation]      Checks if the server response status is ${number}
-        Integer          response status    ${number}
+        Integer          response status    @{number}
 
 Integer Field
     [Arguments]          ${field_name}    ${number}

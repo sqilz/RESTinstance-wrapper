@@ -21,7 +21,7 @@ Save first post in JSON file
 Save all users in JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource                            /users                 ${EMPTY}
-        Validate.response status                         200
+        Validate.response status                         201  404  200
         WriteJSON.body                                   All_users
 
 
