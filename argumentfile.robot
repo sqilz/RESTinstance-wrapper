@@ -1,1 +1,1 @@
--i partial-string
+--name RESTinstance_wrapper

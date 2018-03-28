@@ -11,7 +11,7 @@ Set expectations
     ...                  in the below json string will fail
         Expect response  {"status": { "enum": [200, 201, 204, 400, 404, 405] } }
 
-Response status
+Response Status
     [Arguments]          @{number}
     [Documentation]      Checks if the server response status is ${number}
         Integer          response status    @{number}
@@ -28,7 +28,7 @@ String Field
     [Arguments]          ${field_name}    ${text}
         String           response body ${field_name}    ${text}
 
-String Field partial
+String Field Partial
     [Documentation]      Check if a field contains a part of a string
     ...                  can use many strings in @{text} separated by two spaces
     [Arguments]          ${field_name}    @{text}
@@ -52,7 +52,7 @@ Missing Field
     [Arguments]          ${field_name}
         MISSING          response body ${field_name}
 
-Object field
+Object Field
     [Documentation]      Checks for JSON object, can check if an
     ...                  object has fields. When passing ${required_fields}
     ...                  make sure your fields are surrounded by
@@ -71,7 +71,7 @@ JSON array file
     [Arguments]          ${path}
         Array            response body  ${path}
 
-Number field
+Number Field
     # a test case example of this keyword cannot be made using jsonplaceholder.typicode.com
     # as none of the test data have a number/decimal/float field
     # (there are strings that contain a decimal, but they are strings...)

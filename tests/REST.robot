@@ -14,76 +14,76 @@ Suite Teardown  suite_settings.Output rest instance spec
 *** Test Cases ***
 Save first post in JSON file
     [Tags]  Smoke  Get  Validate
-        Requests.Get Resource number                     /posts                 /1
-        Validate.Response status                         200
-        WriteJSON.body                                   first_post
+        Requests.Get Resource number                     /posts                 1
+        Validate.Response Status                         200
+        WriteJSON.Body                                   first_post
 
 Save all users in JSON file
     [Tags]  Smoke  Get  Validate
         Requests.Get Resource                            /users                 ${EMPTY}
-        Validate.response status                         201  404  200
-        WriteJSON.body                                   All_users
+        Validate.Response Status                         201  404  200
+        WriteJSON.Body                                   All_users
 
 Validate user one and save
     [Tags]  Smoke  Get  Validate
-        Requests.Get Resource number                     /users                 /1
-        Validate.response status                         200
+        Requests.Get Resource number                     /users                 1
+        Validate.Response Status                         200
         Validate.Object Field                            body                   "id", "name"
         Validate.Object Field                            body address geo       "lat", "lng"
         Validate.Object Field                            body                   #second argument is optional
-        WriteJSON.body                                   user_one
-        WriteJSON.custom                                 response body address geo lat   string_number
+        WriteJSON.Body                                   user_one
+        WriteJSON.Custom                                 response body address geo lat   string_number
 
 Get two users
     [Tags]  Smoke  Get  Validate  array
         Requests.Query Resource with request parameters  /users                 ?_limit=2
-        Validate.response status                         200
-        WriteJSON.body                                   two_users
+        Validate.Response Status                         200
+        WriteJSON.Body                                   two_users
 
 Check TODO six is completed
     [Tags]  boolean  Get  Validate
         Requests.Get Resource                            /todos/6               ${EMPTY}
-        Validate.Response status                         200
-        Validate.Boolean field                           completed              false
+        Validate.Response Status                         200
+        Validate.Boolean Field                           completed              false
 
 Add a new post
     [Tags]  post  Validate
         Requests.Post to Resource                        /posts/                {"id": "","title": "A Title", "author": "Somesone"}
-        Validate.Response status                         201
+        Validate.Response Status                         201
 
 Update /posts/2 data
     [Tags]  put  Validate
         Requests.Replace Resource                        /posts/2               {"name":"bob"}
-        Validate.response status                         200
+        Validate.Response Status                         200
 
 Modify user one
     [Tags]  patch  String  Validate
         Requests.Modify resource                         /users/3               {"username":"Samantha"}
-        Validate.response status                         200
-        Validate.String field                            username               Samantha
-        Validate.Missing field                           user
+        Validate.Response Status                         200
+        Validate.String Field                            username               Samantha
+        Validate.Missing Field                           user
 
 Remove user one
     [Tags]  delete  String  Validate
         #Check if such user exists
         Requests.Get Resource number                     /users                 1
-        Validate.Integer field                           id                     1
-        Validate.String field                            name                   Leanne Graham
+        Validate.Integer Field                           id                     1
+        Validate.String Field                            name                   Leanne Graham
         Response Status                                  200
         Requests.Remove Resource                         /users/1
-        Validate.Response status                         200
+        Validate.Response Status                         200
 
 Check server HEAD and OPTIONS
     [Tags]  head  options
         # / is for the URL specified in the variables.py
         # jsonplaceholder.typicode.com (url from the variables.py) doesn't specify the server options
-        # and is returning a 200 response status code
+        # and is returning a 200 Response Status code
         Requests.Return Head                            /
         Requests.Return Options                         /
-        Validate.Response status                        200
+        Validate.Response Status                        200
         Requests.Return Head                            /posts/6
         Requests.Return Options                         /posts/6
-        Validate.Response status                        200
+        Validate.Response Status                        200
         # checking an URL
         Requests.Return Head                            http://google.com/
         # Google doesn't allow the OPTIONS Http method and is returning a 405 status code
