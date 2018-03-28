@@ -2,6 +2,6 @@
 *.xml
 .idea
 resources/__pycache__
-/results/JSON
+/results/json
 argumentfile.robot
 results/json/spec.json
