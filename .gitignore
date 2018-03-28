@@ -3,3 +3,5 @@
 .idea
 resources/__pycache__
 /results/JSON
+argumentfile.robot
+results/json/spec.json
