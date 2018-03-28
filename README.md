@@ -1,6 +1,8 @@
 # RESTinstance wrapper
 
-A project to demonstrate the use of [RESTinstance](https://github.com/asyrjasalo/RESTinstance) and SeleniumLibrary for testing JSON REST APIs
+A wrapper project to demonstrate the use of [RESTinstance](https://github.com/asyrjasalo/RESTinstance) for testing JSON REST APIs
+
+Feel free to contribute
 
 ## Getting Started
 
@@ -18,20 +20,14 @@ You will need:
     pip install --upgrade RESTinstance
 ```
 
-[SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary)
-```
-    pip install --upgrade robotframework-seleniumlibrary
-```
-[SeleniumHQ browser drivers](https://www.seleniumhq.org/download/)
-
-
 
 ### Installing and Running the tests
 
-To get the report simply clone it
+To get the repo simply clone it
+
 
 ```
-    git clone https://github.com/sqilz/REST-Api-Selenium-tests.git
+    git clone https://github.com/sqilz/RESTinstance-wrapper
 ```
 
 Execute ```run.bat``` or ```run.sh``` to run the tests or
