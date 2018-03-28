@@ -34,8 +34,6 @@ String Field partial
     [Arguments]          ${field_name}    @{text}
         ${string}        String    response body ${field_name}
                          Should Contain Any    ${string}    @{text}
-
-
 Boolean Field
     [Documentation]      Validate whether a field is true or false.
     [Arguments]          ${field_name}    ${value}
