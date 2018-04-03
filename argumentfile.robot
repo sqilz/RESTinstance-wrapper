@@ -1,1 +1,2 @@
 --name RESTinstance_wrapper
+--dotted
